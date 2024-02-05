@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('thumb', 200);
             $table->date('creation_date');
             $table->string('type', 20)->nullable();
+            $table->string("category_id");
             $table->timestamps();
         });
     }

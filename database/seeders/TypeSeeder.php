@@ -15,17 +15,20 @@ class TypeSeeder extends Seeder
     {
         $types = [
             [
-                'title' => 'cronaca',
+                'name' => 'cronaca',
                 'description' => 'articoli riguardanti cronaca',
-                'category_id' => 3,
+                'category_id' => 1,
             ],
             [
-                'title' => 'tecnologia',
+                'name' => 'tecnologia',
                 'description' => 'le piu recenti novita in ambito tech',
+                'category_id' => 2,
+
             ],
             [
-                'title' => 'sport',
+                'name' => 'sport',
                 'description' => 'tutte le notizie sui piu famosi atleti del mondo',
+                'category_id' => 3,
             ],
         ];
         foreach ($types as $type) {
