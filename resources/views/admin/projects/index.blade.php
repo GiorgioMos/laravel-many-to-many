@@ -8,7 +8,17 @@
                     <div class="card">
                         <div class="card-header">{{ $projects->title }}</div>
 
-                        <div class="card-body">{{ $projects->description }}</div>
+                        <div class="card-body">
+                            <p>{{ $projects->description }}</p>
+                            {{-- <p>{{ $projects->types }}</p> --}}
+                            <p>
+                                @foreach ($projects->technologies as $technology)
+                                    {
+                                    <span>{{ $technology->name }}</span>
+                                    }
+                                @endforeach
+                            </p>
+                        </div>
                     </div>
                 </div>
             @endforeach
